@@ -509,24 +509,24 @@ public class DynamicGrid {
         boolean hasAA = !AppsCustomizePagedView.DISABLE_ALL_APPS;
         // Our phone profiles include the bar sizes in each orientation
         deviceProfiles.add(new DeviceProfile("Super Short Stubby",
-                255, 300,  2, 3,  48, 13, (hasAA ? 5 : 4), 48));
+                255, 300,  4, 6,  24, 6.5f, (hasAA ? 9 : 8), 24));
         deviceProfiles.add(new DeviceProfile("Shorter Stubby",
-                255, 400,  3, 3,  48, 13, (hasAA ? 5 : 4), 48));
+                255, 400,  6, 6,  24, 6.5f, (hasAA ? 9 : 8), 24));
         deviceProfiles.add(new DeviceProfile("Short Stubby",
-                275, 420,  3, 4,  48, 13, (hasAA ? 5 : 4), 48));
+                275, 420,  6, 8,  24, 6.5f, (hasAA ? 9 : 8), 24));
         deviceProfiles.add(new DeviceProfile("Stubby",
-                255, 450,  3, 4,  48, 13, (hasAA ? 5 : 4), 48));
+                255, 450,  6, 8,  24, 6.5f, (hasAA ? 9 : 8), 24));
         deviceProfiles.add(new DeviceProfile("Nexus S",
-                296, 491.33f,  4, 4,  48, 13, (hasAA ? 5 : 4), 48));
+                296, 491.33f,  8, 8,  24, 6.5f, (hasAA ? 9 : 8), 24));
         deviceProfiles.add(new DeviceProfile("Nexus 4",
-                359, 518,  4, 4,  60, 13, (hasAA ? 5 : 4), 56));
+                359, 518,  8, 8,  30, 6.5f, (hasAA ? 9 : 8), 28));
         // The tablet profile is odd in that the landscape orientation
         // also includes the nav bar on the side
         deviceProfiles.add(new DeviceProfile("Nexus 7",
-                575, 904,  6, 6,  72, 14.4f,  7, 60));
+                575, 904,  12, 12,  36, 7.2f,  13, 30));
         // Larger tablet profiles always have system bars on the top & bottom
         deviceProfiles.add(new DeviceProfile("Nexus 10",
-                727, 1207,  5, 8,  80, 14.4f,  9, 64));
+                727, 1207,  10, 16,  40, 7.2f,  17, 32));
         /*
         deviceProfiles.add(new DeviceProfile("Nexus 7",
                 600, 960,  5, 5,  72, 14.4f,  5, 60));
@@ -534,7 +534,7 @@ public class DynamicGrid {
                 800, 1280,  5, 5,  80, 14.4f, (hasAA ? 7 : 6), 64));
          */
         deviceProfiles.add(new DeviceProfile("20-inch Tablet",
-                1527, 2527,  7, 7,  100, 20,  7, 72));
+                1527, 2527,  14, 14,  50, 10,  13, 36));
         mMinWidth = dpiFromPx(minWidthPx, dm);
         mMinHeight = dpiFromPx(minHeightPx, dm);
         mProfile = new DeviceProfile(context, deviceProfiles,
